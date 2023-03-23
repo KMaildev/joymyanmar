@@ -1,5 +1,6 @@
 <?php
 
+use App\Http\Controllers\AboutController;
 use App\Http\Controllers\ContactController;
 use App\Http\Controllers\EducationCenterController;
 use App\Http\Controllers\GalleryController;
@@ -20,6 +21,7 @@ Route::resource('news', NewsController::class);
 Route::resource('education_center', EducationCenterController::class);
 Route::resource('sending_process', SendingProcessController::class);
 Route::resource('job_category', JobCategoryController::class);
+Route::resource('about', AboutController::class);
 
 
 

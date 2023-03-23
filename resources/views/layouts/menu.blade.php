@@ -84,8 +84,12 @@
                         </li>
 
                         <li>
-                            <a href="{{ route('home') }}">
-                                Company Profile
+                            <a href="{{ route('about.index') }}">
+                                @if (session('key') == 'jp')
+                                    会社概要
+                                @else
+                                    About Us
+                                @endif
                             </a>
                         </li>
 
