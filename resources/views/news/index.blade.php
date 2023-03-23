@@ -2,8 +2,23 @@
 @section('title', '- News')
 @section('content')
     <section>
-        <div class="container mt-30 mb-30 pt-30 pb-30">
+        <div class="container">
             <div class="row ">
+                <div class="section-title text-center">
+                    <div class="row">
+                        <div class="col-md-8 col-md-offset-2">
+                            <h2 class="text-uppercase line-bottom-center mt-0">
+                                @if (session('key') == 'jp')
+                                    ニュース
+                                @else
+                                    <span class="text-theme-colored">
+                                        News
+                                    </span>
+                                @endif
+                            </h2>
+                        </div>
+                    </div>
+                </div>
                 <div class="col-md-12">
                     <div class="blog-posts">
                         <div class="col-md-12">

@@ -20,9 +20,7 @@
             <div class="section-content">
                 <div class="row">
                     <div class="col-md-12">
-
                         <div class="gallery-isotope grid-4 gutter-small clearfix" data-lightbox="gallery">
-                            <!-- Portfolio Item Start -->
                             @foreach ($galleries as $activitie)
                                 @php
                                     $values = explode(',', $activitie->gallery);

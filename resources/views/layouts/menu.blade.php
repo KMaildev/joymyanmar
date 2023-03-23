@@ -45,7 +45,7 @@
                 <div class="col-xs-12 col-sm-4 col-md-8">
                     <div class="widget no-border m-0">
                         <a class="menuzord-brand pull-left flip xs-pull-center mb-15" href="index-mp-layout1.html"><img
-                                src="{{ asset('assets/images/logo-wide.png') }}" alt=""></a>
+                                src="{{ asset('data/logo.jpg') }}" alt=""></a>
                     </div>
                 </div>
 
@@ -90,8 +90,12 @@
                         </li>
 
                         <li>
-                            <a href="{{ route('home') }}">
-                                Job Categories
+                            <a href="{{ route('job_category.index') }}">
+                                @if (session('key') == 'jp')
+                                    実習生派遣の流れ
+                                @else
+                                    Job Categories
+                                @endif
                             </a>
                         </li>
 
@@ -100,7 +104,17 @@
                                 @if (session('key') == 'jp')
                                     日本語教育センター
                                 @else
-                                    Japanese Language Education Center
+                                    Japanese Language Center
+                                @endif
+                            </a>
+                        </li>
+
+                        <li>
+                            <a href="{{ route('sending_process.index') }}">
+                                @if (session('key') == 'jp')
+                                    技能実習生送出しの流れ
+                                @else
+                                    Training workers sending process
                                 @endif
                             </a>
                         </li>
