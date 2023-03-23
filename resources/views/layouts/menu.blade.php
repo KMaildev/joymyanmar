@@ -7,18 +7,17 @@
                         <ul class="list-inline sm-text-center">
                             <li>
                                 <a href="{{ route('en') }}" class="text-white">
-                                    Eng
+                                    <img src="{{ asset('data/eng.png') }}" alt=""
+                                        style="width: 43px; height: auto; padding: 2px;">
+                                    English
                                 </a>
                             </li>
-                            <li class="text-white">|</li>
                             <li>
                                 <a href="{{ route('jp') }}" class="text-white">
-                                    Jp
+                                    <img src="{{ asset('data/japan.png') }}" alt=""
+                                        style="width: 43px; height: auto; padding: 2px;">
+                                    Japan
                                 </a>
-                            </li>
-                            <li class="text-white">|</li>
-                            <li>
-                                <a href="#" class="text-white">Support</a>
                             </li>
                         </ul>
                     </div>
@@ -38,22 +37,27 @@
             </div>
         </div>
     </div>
-    <div class="header-middle p-0 bg-lightest xs-text-center">
-        <div class="container pt-0 pb-0">
-            <div class="row">
 
-                <div class="col-xs-12 col-sm-4 col-md-8">
-                    <div class="widget no-border m-0">
-                        <a class="menuzord-brand pull-left flip xs-pull-center mb-15" href="index-mp-layout1.html"><img
-                                src="{{ asset('data/logo.jpg') }}" alt=""></a>
-                    </div>
+    <div class="header-middle p-0 bg-lightest xs-text-center">
+        <div class="container pt-0 pb-0" style="background-color: white;">
+            <div class="row" style="background-color: white;">
+
+                <div class="col-xs-12 col-sm-8 col-md-8">
+                    {{-- <div class="widget no-border m-0"> --}}
+                    {{-- menuzord-brand pull-left flip xs-pull-center mb-15 --}}
+                    <a class="" href="{{ route('home') }}">
+                        <img src="{{ asset('data/weblogo.png') }}" alt="" style="width: 100%">
+                    </a>
+                    {{-- </div> --}}
                 </div>
 
                 <div class="col-xs-12 col-sm-4 col-md-2">
                     <div class="widget no-border m-0">
                         <div class="mt-10 mb-10 text-right flip sm-text-center">
-                            <div class="font-15 text-black-333 mb-5 font-weight-600"><i
-                                    class="fa fa-phone-square text-theme-colored font-18"></i> +(012) 345 6789</div>
+                            <div class="font-15 text-black-333 mb-5 font-weight-600">
+                                <i class="fa fa-phone-square text-theme-colored font-18"></i>
+                                (+95) 9450054296,
+                            </div>
                             <a class="font-12 text-gray" href="#">Call us for more details!</a>
                         </div>
                     </div>
@@ -62,9 +66,13 @@
                 <div class="col-xs-12 col-sm-4 col-md-2">
                     <div class="widget no-border m-0">
                         <div class="mt-10 mb-10 text-right flip sm-text-center">
-                            <div class="font-15 text-black-333 mb-5 font-weight-600"><i
-                                    class="fa fa-building-o text-theme-colored font-18"></i> Location</div>
-                            <a class="font-12 text-gray" href="#"> 121 King Street, Sydney</a>
+                            <div class="font-15 text-black-333 mb-5 font-weight-600">
+                                <i class="fa fa-envelope text-theme-colored font-18"></i> 
+                                Email Address
+                            </div>
+                            <a class="font-12 text-gray" href="mailto:info@joymyanmar.com">
+                                info@joymyanmar.com
+                            </a>
                         </div>
                     </div>
                 </div>
@@ -79,7 +87,11 @@
 
                         <li>
                             <a href="{{ route('home') }}">
-                                Home
+                                @if (session('key') == 'jp')
+                                    ホーム
+                                @else
+                                    Home
+                                @endif
                             </a>
                         </li>
 

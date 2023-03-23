@@ -6,18 +6,16 @@
     <!-- Meta Tags -->
     <meta name="viewport" content="width=device-width,initial-scale=1.0" />
     <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
-    <meta name="description" content="HelpingPro - Nonprofit, Crowdfunding & Charity HTML5 Template" />
-    <meta name="keywords" content="charity,crowdfunding,nonprofit,orphan,Poor,funding,fundrising,ngo,children" />
-    <meta name="author" content="ThemeMascot" />
-    <!-- Page Title -->
-    <title>Joy Myanmar Co., Ltd - @yield('title')</title>
+    <meta name="description" content="Joy Myanmar Co., Ltd" />
+    <meta name="keywords" content="Joy Myanmar Co., Ltd, Japan, Japanese Language School, Training" />
+    <meta name="author" content="Joy Myanmar Co., Ltd" />
+    <meta property="og:title" content="Joy Myanmar Co., Ltd" />
+    <meta property="og:image" content="{{ asset('data/logo.jpg') }}" />
+    <meta property="og:url" content="" />
+    <meta property="og:site_name" content="Joy Myanmar Co., Ltd" />
+    <link href="{{ asset('data/logo.jpg') }}" rel="shortcut icon" type="image/png">
 
-    <!-- Favicon and Touch Icons -->
-    <link href="images/favicon.png" rel="shortcut icon" type="image/png">
-    <link href="images/apple-touch-icon.png" rel="apple-touch-icon">
-    <link href="images/apple-touch-icon-72x72.png" rel="apple-touch-icon" sizes="72x72">
-    <link href="images/apple-touch-icon-114x114.png" rel="apple-touch-icon" sizes="114x114">
-    <link href="images/apple-touch-icon-144x144.png" rel="apple-touch-icon" sizes="144x144">
+    <title>Joy Myanmar Co., Ltd - @yield('title')</title>
 
     <!-- Stylesheet -->
     <link href="{{ asset('assets/css/bootstrap.min.css') }}" rel="stylesheet" type="text/css">
